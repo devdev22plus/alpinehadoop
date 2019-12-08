@@ -17,14 +17,19 @@
 <!-- Put site-specific property overrides in this file. -->
 
 <configuration>
-  <property>
-    <name>dfs.replication</name>
-    <value>1</value>
-  </property>
-  <property>
-    <name>dfs.safemode.extension</name>
-    <value>0</value>
-  </property>
+
+	<property>
+                <name>dfs.replication</name>
+                <value>1</value>
+	</property>
+	<property>
+		<name>dfs.datanode.http.address</name>
+		<value>0.0.0.0:9864</value>
+	</property>
+	<property>
+		<name>dfs.datanode.address</name>
+		<value>0.0.0.0:9866</value>
+	</property>
 	<property>
 		<name>dfs.datanode.use.datanode.hostname</name>
 		<value>false</value>
@@ -33,13 +38,13 @@
 		<name>dfs.namenode.datanode.registration.ip-hostname-check</name>
 		<value>false</value>
 	</property>
-	<property>
+        <property>
                 <name>dfs.namenode.name.dir</name>
-                <value>file:///root/hadoop_data/namenode</value>
+		<value>file:///root/hadoop_data/namenode</value>
         </property>
         <property>
                 <name>dfs.datanode.data.dir</name>
-                <value>file:///root/hadoop_data/datanode</value>
+		<value>file:///root/hadoop_data/datanode</value>
         </property>
-</configuration>
 
+</configuration>

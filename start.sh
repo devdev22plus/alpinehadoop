@@ -1,12 +1,13 @@
 #!/bin/bash
 
 
-echo "call rc-status"
-rc-status
+#echo "call rc-status"
+#rc-status
 
 
 echo "sshd start"
-/etc/init.d/sshd start
+#/etc/init.d/sshd start
+service ssh start
 
 #echo "format namenode"
 #hadoop namenode -format
@@ -18,9 +19,8 @@ start-dfs.sh
 
 echo "hadoop ready"
 
-#sleep 33333333333333
-
-while :; do sleep 10000000; done
+tail -f /dev/null
+#while :; do sleep 10000000; done
 
 echo "hadoop end"
 
