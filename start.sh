@@ -16,4 +16,11 @@ start-dfs.sh
 
 
 
-sleep 33333333333333
+echo "hadoop ready"
+
+#sleep 33333333333333
+
+while :; do sleep 10000000; done
+
+echo "hadoop end"
+

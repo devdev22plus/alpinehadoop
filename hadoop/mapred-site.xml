@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0"?>
 <?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
 <!--
   Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,28 +18,8 @@
 
 <configuration>
   <property>
-    <name>dfs.replication</name>
-    <value>1</value>
+    <name>mapreduce.framework.name</name>
+    <value>yarn</value>
   </property>
-  <property>
-    <name>dfs.safemode.extension</name>
-    <value>0</value>
-  </property>
-	<property>
-		<name>dfs.datanode.use.datanode.hostname</name>
-		<value>false</value>
-	</property>
-	<property>
-		<name>dfs.namenode.datanode.registration.ip-hostname-check</name>
-		<value>false</value>
-	</property>
-	<property>
-                <name>dfs.namenode.name.dir</name>
-                <value>file:///root/hadoop_data/namenode</value>
-        </property>
-        <property>
-                <name>dfs.datanode.data.dir</name>
-                <value>file:///root/hadoop_data/datanode</value>
-        </property>
 </configuration>
 

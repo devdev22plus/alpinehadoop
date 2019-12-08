@@ -18,28 +18,12 @@
 
 <configuration>
   <property>
-    <name>dfs.replication</name>
-    <value>1</value>
-  </property>
-  <property>
-    <name>dfs.safemode.extension</name>
-    <value>0</value>
+    <name>fs.defaultFS</name>
+    <value>hdfs://192.168.1.15:9000</value>
   </property>
 	<property>
-		<name>dfs.datanode.use.datanode.hostname</name>
-		<value>false</value>
+		<name>hadoop.http.staticuser.user</name>
+		<value>root</value>
 	</property>
-	<property>
-		<name>dfs.namenode.datanode.registration.ip-hostname-check</name>
-		<value>false</value>
-	</property>
-	<property>
-                <name>dfs.namenode.name.dir</name>
-                <value>file:///root/hadoop_data/namenode</value>
-        </property>
-        <property>
-                <name>dfs.datanode.data.dir</name>
-                <value>file:///root/hadoop_data/datanode</value>
-        </property>
 </configuration>
 
