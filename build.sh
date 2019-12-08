@@ -12,6 +12,6 @@ docker rmi $(docker images | grep "alpine_hadoop")
 
 
 #docker
-docker build -t alpine_hadoop -f Dockerfile.hadoop3.ubuntu .
+docker build -t alpine_hadoop -f Dockerfile.hadoop3.ubuntu.arm32 .
 
 
